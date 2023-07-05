@@ -39,7 +39,7 @@ const scroll$ = fromEvent(document, 'scroll');
 
 const progress$ = scroll$.pipe(
     map( calcularPorcentajeScroll ),
-    tap(console.log)
+    tap( console.log )
 );
 
 progress$.subscribe(porcentaje =>{
